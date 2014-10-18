@@ -4,10 +4,12 @@
   :license {:name "BSD"
             :url "http://www.opensource.org/licenses/BSD-3-Clause"}
 
-  :dependencies [[org.clojure/clojure "1.5.1"]
+  :dependencies [[org.clojure/clojure "1.7.0-alpha1"]
                  [org.clojure/core.match "0.2.0"]
-                 [org.clojars.trptcolin/sjacket "0.1.0.6" :exclusions [org.clojure/clojure]]
-                 [com.cemerick/piggieback "0.1.3"]
+                 [org.clojars.trptcolin/sjacket "0.1.0.6" :exclusions [org.clojure/clojure
+                                                                       org.clojure/clojurescript]]
+                 [com.cemerick/piggieback "0.1.3"
+                  :exclusions [org.clojure/clojurescript]]
                  [watchtower "0.1.1"]]
 
   :cljx {:builds [{:source-paths ["test"]
